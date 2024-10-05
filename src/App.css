@@ -11,3 +11,11 @@ body{
 .my-picture{
     height: 300px;
 }
+
+.skills{
+    display: flex;
+}
+
+.image-caption-container{
+    text-align: center;
+}
