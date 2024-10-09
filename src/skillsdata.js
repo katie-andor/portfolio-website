@@ -6,6 +6,7 @@ import Wordpress from './images/Wordpress.png';
 import Figma from './images/Figma.png';
 import SQL from './images/SQL.png';
 import PHP from './images/PHP.png';
+import tailwind from './images/tailwind.png'
 
 const skillsData = [
   { 
@@ -39,7 +40,12 @@ const skillsData = [
   { 
     image: PHP, 
     caption: 'PHP' 
+  },
+  {
+    image: tailwind,
+    caption: 'tailwind'
   }
+
 ];
 
 export default skillsData;
