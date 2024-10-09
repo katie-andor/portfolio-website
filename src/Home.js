@@ -10,7 +10,7 @@ const Home = (props) => {
   return (
     <div>
       <img className="internet-icon" src={internetIcon} alt="Internet Icon" />
-      <div className="top-row">
+      <div className="grid-container">
         <div className="post-it">
           <h1>PROJECTS:</h1>
           <h2>Esports Research Website:</h2>
@@ -28,7 +28,6 @@ const Home = (props) => {
             <li>https://github.com/katie-andor</li>
           </ul>
         </div>
-        <div className="skills">
           <div className="textbubble">
             <div>
               <h2>My Skills Include:</h2>
@@ -51,9 +50,10 @@ const Home = (props) => {
             src={clippy}
             alt="clippy from early windows"
           />
-        </div>
-      </div>
-      {/* <img
+          <div className="links">
+            <p>Links go here</p>
+          </div>
+          <img
         className="minesweeper"
         src={minesweeper}
         alt="A game of minesweeper open in a window"
@@ -63,7 +63,8 @@ const Home = (props) => {
         src={mypicture}
         alt="Katie Andor"
         title="Hi, I'm Katie!"
-      /> */}
+      />
+      </div>
     </div>
   );
 };
