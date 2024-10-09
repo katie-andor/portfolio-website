@@ -1,15 +1,19 @@
 import React from "react";
 import internetIcon from "./images/icons-8-internet-icon.png";
-import mypicture from "./images/my-picture.png";
+import mypicturecopy from "./images/my-picture-copy.png";
 import minesweeper from "./images/minesweeper.png";
 import clippy from "./images/clippy.png";
 import skillsdata from "./skillsdata";
 import "./App.css";
+import { Link } from "react-router-dom";
+import Footer from './components/Footer.js';
 
 const Home = (props) => {
   return (
     <div>
-      <img className="internet-icon" src={internetIcon} alt="Internet Icon" />
+      <Link to="/">
+        <img className="internet-icon" src={internetIcon} alt="Internet Icon" />
+      </Link>
       <div className="grid-container">
         <div className="post-it">
           <h1>PROJECTS:</h1>
@@ -28,43 +32,40 @@ const Home = (props) => {
             <li>https://github.com/katie-andor</li>
           </ul>
         </div>
-          <div className="textbubble">
-            <div>
-              <h2>My Skills Include:</h2>
-            </div>
-            <div className="skills-no-clippy">
-              {skillsdata.map((skill, index) => (
-                <div key={index} className="image-caption-container">
-                  <img
-                    className="dynamic-image"
-                    src={props.image || skill.image}
-                    alt={skill.caption}
-                  />
-                  <p className="image-caption">{skill.caption}</p>
-                </div>
-              ))}
-            </div>
+        <div className="textbubble">
+          <div>
+            <h2>My Skills Include:</h2>
           </div>
-          <img
-            className="clippy"
-            src={clippy}
-            alt="clippy from early windows"
-          />
-          <div className="links">
-            <p>Links go here</p>
+          <div className="skills-no-clippy">
+            {skillsdata.map((skill, index) => (
+              <div key={index} className="image-caption-container">
+                <img
+                  className="dynamic-image"
+                  src={props.image || skill.image}
+                  alt={skill.caption}
+                />
+                <p className="image-caption">{skill.caption}</p>
+              </div>
+            ))}
           </div>
-          <img
-        className="minesweeper"
-        src={minesweeper}
-        alt="A game of minesweeper open in a window"
-      />
-      <img
-        className="my-picture"
-        src={mypicture}
-        alt="Katie Andor"
-        title="Hi, I'm Katie!"
-      />
+        </div>
+        <img className="clippy" src={clippy} alt="clippy from early windows" />
+        <div className="links">
+          <p>Links go here</p>
+        </div>
+        <img
+          className="minesweeper"
+          src={minesweeper}
+          alt="A game of minesweeper open in a window"
+        />
+        <img
+          className="my-picture"
+          src={mypicturecopy}
+          alt="Katie Andor"
+          title="Hi, I'm Katie!"
+        />
       </div>
+      <Footer/>
     </div>
   );
 };

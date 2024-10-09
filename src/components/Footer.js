@@ -1,12 +1,25 @@
 import React from 'react';
-import 'Footer.css';
+import './Footer.css'; // Optional: to apply custom styles
 
-const Home = () => {
+const Footer = () => {
   return (
-    <div> 
-      
-    </div>
+    <footer className="footer">
+      <div className="footer-content">
+        <div className="tabs">
+          <p>START</p>
+        </div>
+        <div className="tabs">
+          <p>MINESWEEPER</p>
+        </div>
+        <div className="tabs">
+          <p>FILES</p>
+        </div>
+        <div className="tabs">
+          <p>GALLERY</p>
+        </div>
+      </div>
+    </footer>
   );
 };
 
-export default Home;
+export default Footer;
