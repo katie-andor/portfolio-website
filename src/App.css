@@ -4,3 +4,8 @@ body{
     background-attachment: fixed;
     font-family: "VT323", monospace;
 }
+
+html, body{
+  height: 100%;
+  margin: 0;
+}
