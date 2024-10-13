@@ -4,10 +4,17 @@ import mypicturecopy from "./images/my-picture.png";
 import minesweeper from "./images/minesweeper.png";
 import clippy from "./images/clippy.png";
 import thumbtack from "./images/thumbtack.png";
+import minimize from "./images/minimize.png";
+import close from "./images/close.png";
+import menubars from "./images/menubars.png";
+import portfolio from "./images/portfolio.png";
+import aboutme from "./images/aboutme.png";
+import resume from "./images/resume.png";
+import contact from "./images/contact.png";
 import skillsdata from "./skillsdata";
 import { Link } from "react-router-dom";
 import Footer from "./components/Footer.js";
-import './App.css'
+import "./App.css";
 
 const Home = (props) => {
   return (
@@ -33,10 +40,15 @@ const Home = (props) => {
       "
       >
         <div
-          className="bg-[#FFD5E2] p-8 sm:col-span-1 lg:row-span-2 pt-[1%] pb-[0%] pr-[2%] pl-[5%]" style={{ boxShadow: '11px 11px 10px rgba(0, 0, 0, 0.25)' }}
+          className="bg-[#FFD5E2] p-8 sm:col-span-1 lg:row-span-2 pt-[1%] pb-[0%] pr-[2%] pl-[5%]"
+          style={{ boxShadow: "11px 11px 10px rgba(0, 0, 0, 0.25)" }}
         >
           <div className="flex justify-center items-center">
-          <img src={thumbtack} alt="a cartoon thumbtack" className="translate-x-[-60%] w-[40px] sm:w-[50px] md:w-[50px] lg:w-[50px] xl:w-[60px]"/>
+            <img
+              src={thumbtack}
+              alt="a cartoon thumbtack"
+              className="translate-x-[-60%] w-[40px] sm:w-[50px] md:w-[50px] lg:w-[50px] xl:w-[60px]"
+            />
           </div>
           <h1 className="text-[30px] sm:text-[30px] md:text-[45px] lg:text-[60px] xl:text-[65px] leading-none mt-[1%] mb-[1%]">
             PROJECTS:
@@ -95,8 +107,92 @@ const Home = (props) => {
           alt="clippy from early windows"
         />
 
-        <div className="bg-orange-500 w-full sm:col-span-1 md:col-span-1 lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4 h-full">
-          <p>Links go here</p>
+        <div className="bg-[#D9D9D9] w-full sm:col-span-1 md:col-span-1 lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4 h-full border-r-4 border-r-solid border-r-[#616161] border-b-4 border-b-solid border-b-[#616161]">
+          <div className="bg-gradient-to-r from-[#FFF85C] to-[#FF9315] flex flex-nowrap justify-end items-center h-[20px] sm:h-[20px] md:h-[30px] lg:h-[30px] xlg:h-[30px] mr-[8px] ml-[8px] mt-[15px]">
+            <div className="">
+              <img
+                src={minimize}
+                alt="minimize button"
+                className="mr-auto ml-auto w-[13px] sm:w-[13px] md:w-[16px] lg:w-[16px] xlg:w-[16px]"
+              />
+            </div>
+            <div className="ml-[15px] mr-[6px]">
+              <img
+                src={close}
+                alt="close button"
+                className="mr-auto ml-auto w-[13px] sm:w-[13px] md:w-[16px] lg:w-[16px] xlg:w-[16px]"
+              />
+            </div>
+          </div>
+          <div className="flex ml-[8px] mr-[8px] mt-[10px]">
+            <p className="text-[15px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[23px]">
+              &larr;
+            </p>
+            <p className="text-[15px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[23px] ml-[8px] mr-[8px]">
+              &rarr;
+            </p>
+            <div className="bg-white flex w-full items-center">
+              <p className="text-[15px] sm:text-[15px] md:text-[18px] lg:text-[16px] xl:text-[21px]">
+                "C:\Users\Katie\Portfolio_Website"
+              </p>
+              <div className="flex-grow items-center"></div>
+              <img
+                src={menubars}
+                alt="menu bar icon"
+                className="h-[60%] sm:h-[60%] md:h-[70%] lg:h-[70%] xl:h-[60%]"
+              />
+            </div>
+          </div>
+          <div className="flex flex-nowrap justify-around items-center bg-white mr-[8px] ml-[8px] mt-[15px] h-[100px] sm:h-[50%] md:h-[60%] lg:h-[9vw] border-l-2 border-l-solid border-l-black border-t-2 border-t-solid border-t-black">
+            <Link to="/portfolio">
+              <div>
+                <img
+                  src={portfolio}
+                  alt="folder icon"
+                  className="w-[60%] sm:w-[60%] md:w-[70%] lg:w-[70%] xl:w-[90%] mr-auto ml-auto"
+                />
+                <p className="text-center text-[17px] sm:text-[20px] md:text-[20px] lg:text-[23px] xl:text-[27px]">
+                  Portfolio
+                </p>
+              </div>
+            </Link>
+            <Link to="/aboutme">
+            <div>
+              <img
+                src={aboutme}
+                alt="notepad icon"
+                className="w-[60%] sm:w-[60%] md:w-[70%] lg:w-[70%] xl:w-[90%] mr-auto ml-auto"
+              />
+              <p className="text-center text-[17px] sm:text-[20px] md:text-[20px] lg:text-[23px] xl:text-[27px]">
+                About Me
+              </p>
+            </div>
+            </Link>
+            <Link to="/resume">
+            <div>
+              <img
+                src={resume}
+                alt="save icon"
+                className="w-[60%] sm:w-[60%] md:w-[70%] lg:w-[70%] xl:w-[90%] mr-auto ml-auto"
+              />
+              <p className="text-center text-[17px] sm:text-[20px] md:text-[20px] lg:text-[23px] xl:text-[27px]">
+                Resume
+              </p>
+            </div>
+            </Link>
+            <Link to="/contact">
+            <div>
+              <img
+                src={contact}
+                alt="email icon"
+                className=" w-[60%] sm:w-[60%] md:w-[70%] lg:w-[70%] xl:w-[90%] mr-auto ml-auto"
+              />
+              <p className="text-center text-[17px] sm:text-[20px] md:text-[20px] lg:text-[23px] xl:text-[27px]">
+                Contact
+              </p>
+            </div>
+            </Link>
+          </div>
         </div>
 
         <img
@@ -112,7 +208,7 @@ const Home = (props) => {
           title="Hi, I'm Katie!"
         />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

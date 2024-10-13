@@ -27,7 +27,7 @@ const Footer = () => {
         
         <div className="flex-grow items-center"></div> 
         <div className="mt-[8px] mr-[10px] border-t-4 border-t-solid border-t-white border-l-4 border-l-solid border-l-white border-r-4 border-r-solid border-r-[#616161] border-b-4 border-b-solid border-b-[#616161]">
-        <p className="pr-[8px] pl-[8px] bg-none text-[30px] sm:text-[33px] md:text-[30px] lg:text-[30px] xlg:text-[33px]">{time}</p>
+        <p className="pr-[8px] pl-[8px] bg-none text-[25px] sm:text-[33px] md:text-[30px] lg:text-[30px] xlg:text-[33px]">{time}</p>
         </div>
       </div>
     </footer>
