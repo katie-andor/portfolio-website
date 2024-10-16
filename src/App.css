@@ -9,3 +9,8 @@ html, body{
   height: 100%;
   margin: 0;
 }
+
+.snake-background{
+  background-image: url('./images/snake-background.png');
+  background-size: cover;
+}
