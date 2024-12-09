@@ -71,8 +71,7 @@ const projects = [
         javadescription: 'codes and decodes messages',
         javaimage: placeholder,
         javaalt: 'placeholder'
-    }
-    
+    },
 ];
 
 export default projects;

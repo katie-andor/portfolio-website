@@ -101,6 +101,7 @@ const Home = (props) => {
           </div>
         </div>
 
+        
         <img
           className="hidden sm:hidden md:hidden lg:block xlg:block w-[30%] mx-auto sm:col-span-1 md:col-span-1 lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3 h-full"
           src={clippy}
