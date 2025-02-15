@@ -3,7 +3,7 @@ import internetIcon from "./images/icons-8-internet-icon.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Footer from "./components/Footer.js";
-import projectdata from "./projectdata.js";
+import projectdata from "./datasets/projectdata.js";
 import "./App.css";
 
 const Portfolio = (props) => {

@@ -1,10 +1,10 @@
-import placeholder from './images/projectdataimages/placeholder.webp'
-import pokedex from './images/projectdataimages/PokeDexImage.png'
-import portfolio from './images/projectdataimages/PortfolioImage.png'
-import cuphead from './images/projectdataimages/CupheadImage.png'
-import esports from './images/projectdataimages/EsportsImage.png'
-import NYIT from './images/projectdataimages/NYITImage.png'
-import quiz from './images/projectdataimages/QuizImage.png'
+import placeholder from '../images/projectdataimages/placeholder.webp'
+import pokedex from '../images/projectdataimages/PokeDexImage.png'
+import portfolio from '../images/projectdataimages/PortfolioImage.png'
+import cuphead from '../images/projectdataimages/CupheadImage.png'
+import esports from '../images/projectdataimages/EsportsImage.png'
+import NYIT from '../images/projectdataimages/NYITImage.png'
+import quiz from '../images/projectdataimages/QuizImage.png'
 
 const projects = [
     {

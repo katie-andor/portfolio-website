@@ -1,12 +1,13 @@
-import HTML from './images/HTML.png';
-import CSS from './images/CSS.png';
-import JavaScript from './images/JavaScript.png';
-import ReactImage from './images/React.png';
-import Wordpress from './images/Wordpress.png';
-import Figma from './images/Figma.png';
-import SQL from './images/SQL.png';
-import PHP from './images/PHP.png';
-import tailwind from './images/tailwind.png'
+
+import HTML from '../images/HTML.png';
+import CSS from '../images/CSS.png';
+import JavaScript from '../images/JavaScript.png';
+import ReactImage from '../images/React.png';
+import Wordpress from '../images/Wordpress.png';
+import Figma from '../images/Figma.png';
+import SQL from '../images/SQL.png';
+import PHP from '../images/PHP.png';
+import tailwind from '../images/tailwind.png'
 
 const skillsData = [
   { 
@@ -45,7 +46,6 @@ const skillsData = [
     image: tailwind,
     caption: 'tailwind'
   }
-
 ];
 
 export default skillsData;

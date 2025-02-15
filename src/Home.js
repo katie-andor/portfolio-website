@@ -11,7 +11,7 @@ import portfolio from "./images/portfolio.png";
 import aboutme from "./images/aboutme.png";
 import resume from "./images/resume.png";
 import contact from "./images/contact.png";
-import skillsdata from "./skillsdata";
+import skillsdata from "./datasets/skillsdata.js";
 import { Link } from "react-router-dom";
 import Footer from "./components/Footer.js";
 import "./App.css";
