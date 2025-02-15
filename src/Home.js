@@ -54,18 +54,16 @@ const Home = (props) => {
             PROJECTS:
           </h1>
           <h2 className="text-[23px] sm:text-[23px] md:text-[30px] lg:text-[30px] xl:text-[38px] leading-none">
-            Esports Research Website:
+            The Shelves:
           </h2>
           <ul className=" list-disc text-[20px] sm:text-[20px] md:text-[23px] lg:text-[23px] xl:text-[27px] ml-[8%]">
-            <li>Uses WordPress, Divi Theme Builder</li>
-            <li>esportsresearch.net</li>
-          </ul>
-          <h2 className="text-[23px] sm:text-[23px] md:text-[30px] lg:text-[30px] xl:text-[38px] leading-none">
-            Cuphead Fan Wiki:
-          </h2>
-          <ul className=" list-disc text-[20px] sm:text-[20px] md:text-[23px] lg:text-[23px] xl:text-[27px] ml-[8%]">
-            <li>Uses React.js, HTML, and CSS</li>
-            <li>cupheadfanwiki.netlify.app</li>
+            <li>
+              Envisioned and delivered a library service that allows users to
+              place orders for books from local libraries online through The
+              Shelves website.
+            </li>
+            <li>Published: https://shelves-o7hn82av3-ayman-haques-projects.vercel.app/ 
+            </li>
           </ul>
           <h2 className="text-[23px] sm:text-[23px] md:text-[30px] lg:text-[30px] xl:text-[38px] leading-none">
             GitHub:
@@ -101,7 +99,6 @@ const Home = (props) => {
           </div>
         </div>
 
-        
         <img
           className="hidden sm:hidden md:hidden lg:block xlg:block w-[30%] mx-auto sm:col-span-1 md:col-span-1 lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3 h-full"
           src={clippy}
@@ -158,40 +155,40 @@ const Home = (props) => {
               </div>
             </Link>
             <Link to="/certifications">
-            <div>
-              <img
-                src={aboutme}
-                alt="notepad icon"
-                className="w-[60%] sm:w-[60%] md:w-[70%] lg:w-[70%] xl:w-[90%] mr-auto ml-auto"
-              />
-              <p className="text-center text-[17px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[22px]">
-                Certificates
-              </p>
-            </div>
+              <div>
+                <img
+                  src={aboutme}
+                  alt="notepad icon"
+                  className="w-[60%] sm:w-[60%] md:w-[70%] lg:w-[70%] xl:w-[90%] mr-auto ml-auto"
+                />
+                <p className="text-center text-[17px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[22px]">
+                  Certificates
+                </p>
+              </div>
             </Link>
             <Link to="/resume">
-            <div>
-              <img
-                src={resume}
-                alt="save icon"
-                className="w-[60%] sm:w-[60%] md:w-[70%] lg:w-[70%] xl:w-[90%] mr-auto ml-auto"
-              />
-              <p className="text-center text-[17px] sm:text-[20px] md:text-[20px] lg:text-[23px] xl:text-[27px]">
-                Resume
-              </p>
-            </div>
+              <div>
+                <img
+                  src={resume}
+                  alt="save icon"
+                  className="w-[60%] sm:w-[60%] md:w-[70%] lg:w-[70%] xl:w-[90%] mr-auto ml-auto"
+                />
+                <p className="text-center text-[17px] sm:text-[20px] md:text-[20px] lg:text-[23px] xl:text-[27px]">
+                  Resume
+                </p>
+              </div>
             </Link>
             <Link to="/contact">
-            <div>
-              <img
-                src={contact}
-                alt="email icon"
-                className=" w-[60%] sm:w-[60%] md:w-[70%] lg:w-[70%] xl:w-[90%] mr-auto ml-auto"
-              />
-              <p className="text-center text-[17px] sm:text-[20px] md:text-[20px] lg:text-[23px] xl:text-[27px]">
-                Contact
-              </p>
-            </div>
+              <div>
+                <img
+                  src={contact}
+                  alt="email icon"
+                  className=" w-[60%] sm:w-[60%] md:w-[70%] lg:w-[70%] xl:w-[90%] mr-auto ml-auto"
+                />
+                <p className="text-center text-[17px] sm:text-[20px] md:text-[20px] lg:text-[23px] xl:text-[27px]">
+                  Contact
+                </p>
+              </div>
             </Link>
           </div>
         </div>
