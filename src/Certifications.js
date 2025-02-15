@@ -2,7 +2,7 @@ import React from 'react';
 import internetIcon from "./images/icons-8-internet-icon.png";
 import { Link } from "react-router-dom";
 
-const AboutMe = () => {
+const Certifications = () => {
   return (
     <div>
     <Link to="/">
@@ -12,9 +12,9 @@ const AboutMe = () => {
           alt="Internet Icon"
         />
       </Link>
-    <p>about me</p>
+    <p>Certifications</p>
     </div>
   );
 };
 
-export default AboutMe;
+export default Certifications;

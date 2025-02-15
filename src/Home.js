@@ -157,15 +157,15 @@ const Home = (props) => {
                 </p>
               </div>
             </Link>
-            <Link to="/aboutme">
+            <Link to="/certifications">
             <div>
               <img
                 src={aboutme}
                 alt="notepad icon"
                 className="w-[60%] sm:w-[60%] md:w-[70%] lg:w-[70%] xl:w-[90%] mr-auto ml-auto"
               />
-              <p className="text-center text-[17px] sm:text-[20px] md:text-[20px] lg:text-[23px] xl:text-[27px]">
-                About Me
+              <p className="text-center text-[17px] sm:text-[18px] md:text-[18px] lg:text-[18px] xl:text-[22px]">
+                Certificates
               </p>
             </div>
             </Link>
