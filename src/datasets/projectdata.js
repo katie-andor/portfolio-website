@@ -5,6 +5,7 @@ import cuphead from '../images/projectdataimages/CupheadImage.png'
 import esports from '../images/projectdataimages/EsportsImage.png'
 import NYIT from '../images/projectdataimages/NYITImage.png'
 import quiz from '../images/projectdataimages/QuizImage.png'
+import shelves from '../images/projectdataimages/ShelvesImage.png'
 
 const projects = [
     {
@@ -13,6 +14,13 @@ const projects = [
         htmllink: 'https://github.com/katie-andor/portfolio-website',
         htmlimage: portfolio,
         htmlalt: 'placeholderalt'
+    },
+    {
+        htmltitle: 'The Shelves',
+        htmldescription: 'The one-stop-shop for all your reading needs. The Shelves is a service that works with public libraries in order to make access to library books more convenient and accessible for all.',
+        htmllink: 'https://shelves-o7hn82av3-ayman-haques-projects.vercel.app/',
+        htmlimage: shelves,
+        htmlalt: 'The homepage of the website The Shelves'
     },
     {
         htmltitle: 'Esports Research Website',
