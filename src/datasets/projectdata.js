@@ -6,6 +6,8 @@ import esports from '../images/projectdataimages/EsportsImage.png'
 import NYIT from '../images/projectdataimages/NYITImage.png'
 import quiz from '../images/projectdataimages/QuizImage.png'
 import shelves from '../images/projectdataimages/ShelvesImage.png'
+import letdowntourgraphic from '../images/projectdataimages/LetDownTourMockUp.png'
+import fakeplastictreesgraphic from '../images/projectdataimages/FakePlasticTreesTourMockUp.png'
 
 const projects = [
     {
@@ -57,28 +59,28 @@ const projects = [
         htmlalt: 'placeholderalt'
     },
     {
-        apptitle: 'Quiz App',
-        appdescription: 'Android app that lets you take a quiz.',
-        appimage: placeholder,
-        appalt: 'placeholder'
+        wireframetitle: 'Marvel Rivals',
+        wireframedescription: 'Motion backgrounds for Marvel Rivals fans.',
+        wireframeimage: 'https://embed.figma.com/proto/UrQUEjUD6xUgWumD1uUmuB/Venom-%26-Scarlet-Witch?page-id=0%3A1&node-id=1-28&p=f&viewport=-327%2C433%2C0.19&scaling=contain&content-scaling=fixed&embed-host=share',
+        wireframealt: 'placeholder'
     },
     {
-        javatitle: 'Wordle Cheat',
-        javadescription: 'cheat at Wordle',
-        javaimage: placeholder,
-        javaalt: 'placeholder'
+        wireframetitle: 'Fake Plastic Trees Tour',
+        wireframedescription: 'Mockup landing page for Radiohead tour tickets. Scrollable.',
+        wireframeimage: 'https://embed.figma.com/proto/xhZVgao7u9RSFyPfDEAkYs/Fake-Plastic-Trees-Tour-Mockup?page-id=0%3A1&node-id=3-24&scaling=contain&content-scaling=fixed&embed-host=share',
+        wireframealt: 'placeholderalt'
     },
     {
-        javatitle: 'Cypher',
-        javadescription: 'codes and decodes messages',
-        javaimage: placeholder,
-        javaalt: 'placeholder'
+        graphictitle: 'Let Down Tour 2025',
+        graphicdescription: 'Landing page for Radiohead tour tickets.',
+        graphicimage: letdowntourgraphic,
+        graphicalt: 'placeholder'
     },
     {
-        javatitle: 'Cypher',
-        javadescription: 'codes and decodes messages',
-        javaimage: placeholder,
-        javaalt: 'placeholder'
+        graphictitle: 'Fake Plastic Trees Tour 2025',
+        graphicdescription: 'Landing page for Radiohead tour tickets.',
+        graphicimage: fakeplastictreesgraphic,
+        graphicalt: 'placeholder'
     },
 ];
 
