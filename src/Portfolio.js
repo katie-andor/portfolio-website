@@ -16,10 +16,10 @@ const Portfolio = (props) => {
   const filterProjects = (projectType) => {
     if (projectType === "webdev") {
       return projectdata.filter((project) => project.htmltitle);
-    } else if (projectType === "mobileapp") {
-      return projectdata.filter((project) => project.apptitle);
-    } else if (projectType === "java") {
-      return projectdata.filter((project) => project.javatitle);
+    } else if (projectType === "wireframes") {
+      return projectdata.filter((project) => project.wireframetitle);
+    } else if (projectType === "graphics") {
+      return projectdata.filter((project) => project.graphictitle);
     }
     return [];
   };
@@ -44,16 +44,16 @@ const Portfolio = (props) => {
               Web Development
             </button>
             <button
-              onClick={() => handleTabChange("mobileapp")}
+              onClick={() => handleTabChange("wireframes")}
               className="pt-2 pb-2 pr-2 sm:pr-6 md:pr-6 lg:pr-6 xl:pr-6 pl-2 sm:pl-6 md:pl-6 lg:pl-6 xl:pl-6 hover:bg-[#FF5CE7] border-2 border-black border-solid"
             >
-              Mobile Apps
+              Wireframes
             </button>
             <button
-              onClick={() => handleTabChange("java")}
+              onClick={() => handleTabChange("graphics")}
               className="pt-2 pb-2 pr-2 sm:pr-6 md:pr-6 lg:pr-6 xl:pr-6 pl-2 sm:pl-6 md:pl-6 lg:pl-6 xl:pl-6 hover:bg-[#FF5CE7] border-2 border-black border-solid"
             >
-              Java Projects
+              Graphics
             </button>
           </div>
 
@@ -79,41 +79,42 @@ const Portfolio = (props) => {
                 ))}
               </div>
             )}
+            
 
-            {activeTab === "mobileapp" && (
+            {activeTab === "wireframes" && (
               <div className="grid gap-4 w-[90%] mr-auto ml-auto mt-8 mb-6 p-4 bg-[#FFFCBC] rounded-[18px] grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-                {filterProjects("mobileapp").map((project, index) => (
+                {filterProjects("wireframes").map((project, index) => (
                   <div key={index}>
-                    <img
-                      src={project.appimage}
-                      alt={project.appalt}
-                      className="w-full mr-auto ml-auto"
+                    <iframe
+                      src={project.wireframeimage}
+                      alt={project.wireframealt}
+                      className="w-full h-[600px] mr-auto ml-auto"
                     />
                     <h3 className="text-left leading-tight text-[35px] sm:text-[50px] md:text-[45px] lg:text-[50px] xl:text-[50px]">
-                      {project.apptitle}
+                      {project.wireframetitle}
                     </h3>
                     <p className="text-[20px] text-left leading-tight text-[25px] sm:text-[30px] md:text-[25px] lg:text-[30px] xl:text-[30px]">
-                      {project.appdescription}
+                      {project.wireframedescription}
                     </p>
                   </div>
                 ))}
               </div>
             )}
 
-            {activeTab === "java" && (
+            {activeTab === "graphics" && (
               <div className="grid gap-4 w-[90%] mr-auto ml-auto mt-8 mb-6 p-4 bg-[#FFFCBC] rounded-[18px] grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-                {filterProjects("java").map((project, index) => (
+                {filterProjects("graphics").map((project, index) => (
                   <div key={index}>
                     <img
-                      src={project.javaimage}
-                      alt={project.javaalt}
+                      src={project.graphicimage}
+                      alt={project.graphicalt}
                       className="w-full mr-auto ml-auto"
                     />
                     <h3 className="text-left leading-tight text-[35px] sm:text-[50px] md:text-[45px] lg:text-[50px] xl:text-[50px]">
-                      {project.javatitle}
+                      {project.graphictitle}
                     </h3>
                     <p className="text-[20px] text-left leading-tight text-[25px] sm:text-[30px] md:text-[25px] lg:text-[30px] xl:text-[30px]">
-                      {project.javadescription}
+                      {project.graphicdescription}
                     </p>
                   </div>
                 ))}
